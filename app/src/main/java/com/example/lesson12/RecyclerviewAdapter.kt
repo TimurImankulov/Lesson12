@@ -33,7 +33,7 @@ class RecyclerviewAdapter(private val listener: RecyclerviewListener) : Recycler
     }
 
     fun add(item: DataClass) {
-        data.add(1, item)
-        notifyItemInserted(1)
+        data.add(0, item)
+        notifyItemInserted(0)
     }
 }

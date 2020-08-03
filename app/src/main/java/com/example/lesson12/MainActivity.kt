@@ -32,14 +32,14 @@ class MainActivity : AppCompatActivity(), RecyclerviewListener {
     private fun getData(): ArrayList<DataClass> {
         val list = arrayListOf<DataClass>()
 
-        for (i in 1..50) {
+        for (i in 1..10) {
             list.add(DataClass("Name $i", "Phone number $i"))
         }
         return list
     }
 
-    override fun itemClicks(item: DataClass) {
-        adapter.delete(2)
+    override fun itemClicks(position: Int) {
+        adapter.delete(position)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Lesson12</string>
     <string name="menu_title">Add</string>
+    <string name="btn_title">Delete</string>
 </resources>

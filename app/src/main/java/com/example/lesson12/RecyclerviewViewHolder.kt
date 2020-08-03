@@ -14,8 +14,7 @@ class RecyclerviewViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         itemView.tvText1.text = item.title1
 
         itemView.btnDelete.setOnClickListener {
-            listener.itemClicks(item)
-
+            listener.itemClicks(position)
         }
     }
 }
